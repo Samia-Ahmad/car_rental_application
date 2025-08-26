@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(backgroundColor: Color.fromARGB(255, 255, 255, 255)),
-      ),
-      home: Home(),
+      //theme: ThemeData(
+        //appBarTheme: AppBarTheme(backgroundColor: Color.fromARGB(255, 255, 255, 255)),
+      //),
+      home: Settings(),
     );
   }
 }
