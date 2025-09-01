@@ -52,7 +52,7 @@ class Settings extends StatelessWidget {
               settingsWidget(title: 'Edit Profile', icon: Icons.edit_square),
               SizedBox(height: 16),
               settingsWidget(title: 'Information', icon: Icons.info),
-              // primaryButton(color: Colors.black),),
+              
 
               SizedBox(height: 32,),
               Padding(
@@ -76,20 +76,6 @@ class Settings extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class primaryButton extends StatelessWidget {
-  const primaryButton({super.key, required this.color, this.height});
-  final Color color;
-  final double? height;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.sizeOf(context).width,
-      height: height ?? 60,
-      color: color,
     );
   }
 }

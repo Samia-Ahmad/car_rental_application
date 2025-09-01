@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String text; // Button text
-  final VoidCallback onPressed; // Callback function
+  final VoidCallback? onPressed; // Callback function
   final double widthFactor; 
   final double height;
+  final Color? backgroundColor;   // optional
 
   const PrimaryButton({
     super.key,
@@ -12,6 +13,7 @@ class PrimaryButton extends StatelessWidget {
     required this.onPressed,
     this.height =  50,
     this.widthFactor = 0.95,
+    this.backgroundColor,
   });
 
   @override
@@ -22,7 +24,7 @@ class PrimaryButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.amber,
+          backgroundColor:  backgroundColor ?? Colors.amber,
           foregroundColor: Colors.black,
     
           //padding: EdgeInsets.symmetric(horizontal: 150 , vertical: 8),

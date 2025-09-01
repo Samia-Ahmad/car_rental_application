@@ -1,3 +1,5 @@
+import 'package:car_rental_application/view/screens/auth/sign_up.dart';
+import 'package:car_rental_application/view/screens/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:car_rental_application/view/screens/edit_profile/edit_profile.dart';
 import 'package:car_rental_application/view/screens/settings/settings.dart';
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       //theme: ThemeData(
         //appBarTheme: AppBarTheme(backgroundColor: Color.fromARGB(255, 255, 255, 255)),
       //),
-      home: Settings(),
+      home: SignUp(),
     );
   }
 }
